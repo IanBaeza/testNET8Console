@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "testNETBackend/1.0.0": {
+        "runtime": {
+          "testNETBackend.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "testNETBackend/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
