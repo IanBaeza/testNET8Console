@@ -52,6 +52,18 @@
 
 
 
+
+var sale = new Sale();
+var beer = new Beer();
+
+Some(sale);
+Some(beer);
+
+void Some(ISave save)
+{
+    save.Save();
+}
+
 interface ISale
 {
     decimal Total { get; set; }  

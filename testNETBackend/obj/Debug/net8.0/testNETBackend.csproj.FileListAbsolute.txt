@@ -12,3 +12,4 @@ C:\Users\Ian\Documents\My Software Development docs\Projects\Dot NET 8\testNETBa
 C:\Users\Ian\Documents\My Software Development docs\Projects\Dot NET 8\testNETBackend\testNETBackend\obj\Debug\net8.0\testNETBackend.pdb
 C:\Users\Ian\Documents\My Software Development docs\Projects\Dot NET 8\testNETBackend\testNETBackend\obj\Debug\net8.0\testNETBackend.genruntimeconfig.cache
 C:\Users\Ian\Documents\My Software Development docs\Projects\Dot NET 8\testNETBackend\testNETBackend\obj\Debug\net8.0\ref\testNETBackend.dll
+C:\Users\Ian\Documents\My Software Development docs\Projects\Dot NET 8\testNETBackend\testNETBackend\obj\Debug\net8.0\testNETBackend.sourcelink.json
