@@ -1,7 +1,4 @@
-﻿
-
-
-//var sale = new SaleWithTax(15, 1.16m);
+﻿//var sale = new SaleWithTax(15, 1.16m);
 //sale.Total = 15;
 
 //var message = sale.GetInfo();
@@ -53,42 +50,95 @@
 
 
 
-var sale = new Sale();
-var beer = new Beer();
+//var sale = new Sale();
+//var beer = new Beer();
 
-Some(sale);
-Some(beer);
+//Some(sale);
+//Some(beer);
 
-void Some(ISave save)
+//void Some(ISave save)
+//{
+//    save.Save();
+//}
+
+//interface ISale
+//{
+//    decimal Total { get; set; }  
+//}
+
+//interface ISave
+//{
+//    public void Save();
+//}
+
+//public class Sale : ISale, ISave
+//{
+//    public decimal Total { get; set; } 
+//    public void Save()
+//    {
+//        Console.WriteLine("Se guardo en BD");
+//    }
+//}
+
+//public class Beer : ISave
+//{
+//    public void Save()
+//    {
+//        Console.WriteLine("Se guardo en Servicio");    
+//    }
+//}
+
+
+/////////////////////////////
+///
+
+var numbers = new MyList<int>(5); 
+var names = new MyList<string>(4);
+
+numbers.Add(1);
+numbers.Add(2);
+numbers.Add(3); 
+numbers.Add(4);
+numbers.Add(5);
+numbers.Add(6);
+
+names.Add("Catalina");
+names.Add("Belen");
+names.Add("Roberto");
+names.Add("Juan");
+names.Add("Patricio");
+
+Console.WriteLine(numbers.GetContent());
+Console.WriteLine(names.GetContent());
+
+public class MyList<T>
 {
-    save.Save();
-}
+    private List<T> _list;
+    private int _limit;
 
-interface ISale
-{
-    decimal Total { get; set; }  
-}
+    public MyList(int limit) {
+        this._limit = limit;
+        _list = new List<T>();
+    }
 
-interface ISave
-{
-    public void Save();
-}
-
-public class Sale : ISale, ISave
-{
-    public decimal Total { get; set; } 
-    public void Save()
+    public void Add(T element)
     {
-        Console.WriteLine("Se guardo en BD");
+        if(_list.Count < _limit)
+        {
+            _list.Add(element);
+        }
+    }
+
+    public string GetContent()
+    {
+        string content = "";
+
+        foreach (var element in _list)
+        {
+            content += element + ", ";
+        }
+
+        return content;
     }
 }
-
-public class Beer : ISave
-{
-    public void Save()
-    {
-        Console.WriteLine("Se guardo en Servicio");    
-    }
-}
-
 
